@@ -59,7 +59,7 @@ header {
 .join {
     text-align: center;
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .join:hover{
     background-color: black;
