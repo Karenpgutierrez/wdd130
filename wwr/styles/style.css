@@ -50,7 +50,7 @@ header {
 .book {
     text-align: center;
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .book:hover{
     background-color: black;
