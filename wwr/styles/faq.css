@@ -1,0 +1,10 @@
+main h1,
+main h2 {
+  text-align: center;
+}
+
+main h3,
+main p {
+  text-align: justify;
+  padding: 0 50px;
+}
