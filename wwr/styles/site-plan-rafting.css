@@ -37,10 +37,14 @@ body {
   font-size: 18px;
   text-align: center;
 }
-img {
-  display: block;
+#logo { display: block;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 300px; }
+
+img {
+  width: 80%;
+  margin: auto;
+  
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
