@@ -5,19 +5,17 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <title>Deluxe Travel Colombia</title>
-   </head>
-   <body>
+     <link rel="stylesheet" href="./styles/site-plan.css">
+  </head>
+  <body>
       <div id="content">
-        <header>
-          <a id="logo_link" href="index.html">
-          <img class="logo" src="images/Deluxe.png" alt="deluxe travel logo" />
-          </a>
-             <nav>
-              <a href="index.html">Home</a>
-              <a href="faq.html">Our services</a>
-              <a href="contactus.html">Contact Us</a>
-          
-            </nav>
+       <header>
+          <a id="logo_link" href="index.html"><img class="logo" src="images/Deluxe.png" alt="deluxe travel logo" /></a>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="ourservices.html">Our services</a>
+            <a href="contactus.html">Contact Us</a>
+          </nav>
        </header>
        <div id="salento">
           <div id="salento-box">
@@ -62,7 +60,21 @@
       </main>
       
       <footer>
-        <p>Copyright &copy; 2023, Deluxe Travel Colombia - Karen Gutierrez</p>
+        <div>
+          <p>
+            &copy;
+            <span id="copyright">
+              <script>
+                document
+                  .getElementById("copyright")
+                  .appendChild(
+                    document.createTextNode(new Date().getFullYear())
+                  );
+              </script>
+            </span>
+            Deluxe Travel Colombia
+          </p>
+        </div>
         <p><a href="site-plan.html">Site Plan</a></p>
         <div class="social">
           <a href="https://facebook.com" target="_blank">
@@ -75,7 +87,7 @@
             <img src="images/instagramicon.png" alt="instagram icon" />
           </a>
         </div>
-    </footer>
+      </footer>
 </div>
 </body>
 </html>

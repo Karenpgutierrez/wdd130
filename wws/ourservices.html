@@ -5,74 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deluxe Travel Colombia</title>
-    
+    <link rel="stylesheet" href="./styles/site-plan.css">
   </head>
   <body>
       <div id="content">
        <header>
-          <a id="logo_link" href="index.html">
-          <img class="logo" src="images/Deluxe.png" alt="deluxe travel logo" />
-          </a>
-             <nav>
-              <a href="index.html">Home</a>
-              <a href="ourservices.html">Our services</a>
-              <a href="contactus.html">Contact Us</a>
-          
-            </nav>
+          <a id="logo_link" href="index.html"><img class="logo" src="images/Deluxe.png" alt="deluxe travel logo" /></a>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="ourservices.html">Our services</a>
+            <a href="contactus.html">Contact Us</a>
+          </nav>
        </header>
         <section id="services-msg">
-             <h1 class="home-title">Our services portfolio</h1>
-             <p>Exclusive, Private and Safe for you. Dare to live this Experience!</p>
-              <a class='book' href="booking.html">Book Now</a>
-               
+          <h1 class="home-title">Our Services</h1>
+          <p>Exclusive, Private and Safe for you. Dare to live this Experience!</p>
         </section>
     </div>
-
     <main class="home-grid">
-        <section class="places-card">
-            <img class="banner-img" src="images/Banner-cañocristales.jpg" alt="cano cristales place ">
-            
-        </section>
-        <section class="villa-card">
-            <img class="banner-img" src="images/banner-villa.jpg" alt="airbnb">
-            
-            
-        </section>
-        <section class="tours-card">
-            <img class="banner-img" src="images/bannerkodian" alt="Atv's">
-          
-
-        </section>
-        <section class="chef-card">
-            <img class="banner-img" src="images/chef-banner.jpg" alt="chef">
-            
-            
-        </section>
-        <section class="transportations-card">
-            <img class="banner-img" src="images/transportartion.jpg" alt="vans">
-
-            
-        </section>
-        <section class="security-card">
-          <img class="banner-img" src="images/security-banner.jpg" alt="private security">
-
-          
-      </section>  
+      <section>
+        <div class="wide-card" id="travel-card">
+          <div class="overlay">
+            <h4 class="img-txt">Places</h4>
+          </div>
+        </div>
+        <div class="wide-card" id="stay-card">
+          <div class="overlay">
+            <h4 class="img-txt">Luxury Stay</h4>
+          </div>
+        </div>
+        <div class="wide-card" id="adventure-card">
+          <div class="overlay">
+            <h4 class="img-txt">Adventures</h4>
+          </div>
+        </div>
+        <div class="wide-card" id="dining-card">
+          <div class="overlay">
+            <h4 class="img-txt">Fancy Dining</h4>
+          </div>
+        </div>
+        <div class="wide-card" id="ride-card">
+          <div class="overlay">
+            <h4 class="img-txt">Luxury Rides</h4>
+          </div>
+        </div>
+        <div class="wide-card" id="secure-card">
+          <div class="overlay">
+            <h4 class="img-txt">Safe Travel</h4>
+          </div>
+        </div>
+      </section>
+      <div class="book-now">
+        <a class="button" type="button" href="booking.html"> Book Now </a>
+      </div>
     </main>
     <footer>
-        <p>Copyright &copy; 2023, Deluxe Travel Colombia - Karen Gutierrez</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-            <img src="images/facebookicon.png" alt="fb icon" />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img src="images/twittericon.png" alt="twitter icon" />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <img src="images/instagramicon.png" alt="instagram icon" />
-          </a>
-        </div>
+      <div>
+        <p>
+          &copy;
+          <span id="copyright">
+            <script>
+              document
+                .getElementById("copyright")
+                .appendChild(
+                  document.createTextNode(new Date().getFullYear())
+                );
+            </script>
+          </span>
+          Deluxe Travel Colombia
+        </p>
+      </div>
+      <p><a href="site-plan.html">Site Plan</a></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebookicon.png" alt="fb icon" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twittericon.png" alt="twitter icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagramicon.png" alt="instagram icon" />
+        </a>
+      </div>
     </footer>
 </div>
 </body>
