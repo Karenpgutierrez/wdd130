@@ -204,6 +204,12 @@ p {
   height: 100%;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: 0.5s ease; 
+}
+
+.card:hover .overlay {
+  opacity: 1;
 }
 
 .wide-card {
@@ -219,12 +225,21 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: 0.5s ease; 
+}
+
+.wide-card:hover .overlay{
+  opacity: 1;
 }
 
 .img-txt {
   position: absolute;
   color: var(--accent2-color);
   margin: auto;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 #cartanega-card {
@@ -286,6 +301,7 @@ p {
 #travel-card {
   background-image: url("../images/Banner-cañocristales.jpg");
   background-position: center;
+  
 }
 
 #travel-card .img-txt {
