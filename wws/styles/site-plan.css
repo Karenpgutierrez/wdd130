@@ -225,13 +225,9 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-  transition: 0.5s ease; 
+  
 }
 
-.wide-card:hover .overlay{
-  opacity: 1;
-}
 
 .img-txt {
   position: absolute;
