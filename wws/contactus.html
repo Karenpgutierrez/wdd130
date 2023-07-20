@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Deluxe Travel Colombia</title>
-     <link rel="stylesheet" href="./styles/site-plan.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe Travel Colombia</title>
+    <link rel="stylesheet" href="./styles/site-plan.css" />
   </head>
   <body>
-      <div id="content">
-       <header>
-          <a id="logo_link" href="index.html"><img class="logo" src="images/Deluxe.png" alt="deluxe travel logo" /></a>
-          <nav>
-            <a href="index.html">Home</a>
-            <a href="ourservices.html">Our services</a>
-            <a href="contactus.html">Contact Us</a>
-          </nav>
-       </header>
-       <div id="salento">
-          <div id="salento-box">
-            <img id="colombia-img" src="images/cocora.jpg" alt="cocora valley ">
-           </div>
+    <div id="content">
+      <header>
+        <a id="logo_link" href="index.html"
+          ><img class="logo" src="images/Deluxe.png" alt="deluxe travel logo"
+        /></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="ourservices.html">Our services</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <div id="salento">
+        <section id="hero-msg">
+          <div class="widescreen" id="salento-img">
+            <div class="overlay">
+              <h2 class="img-txt">Contact Us</h2>
+            </div>
+          </div>
+        </section>
       </div>
       <main class="grid">
-        <h1>Contact Us</h1>
         <section class="msg">
-            <h3>Not all services can be booked on this page since it's important that you contact us. This will help you obtain more information to effectively plan your trip.</h3>
-            <p> </p>
-
+          <h3>
+            Not all services can be booked on this page since it's important
+            that you contact us. This will help you obtain more information to
+            effectively plan your trip.
+          </h3>
+        </section>
         <section class="sai-card">
-            <img class="card-img" src="images/sanandres.webp" alt="San andres island">
-
+          <img
+            class="card-img"
+            src="images/sanandres.webp"
+            alt="San andres island"
+          />
         </section>
         <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name"></label>
-              <input type="text" id="name" name="user_name" placeholder="First name"/>
-            </li>
-            <li>
+        <section class="contact-form">
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
                 <label for="name"></label>
-                <input type="text" id="name" name="user_name" placeholder="Last name"/>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="First name"
+                />
               </li>
-            <li>
-              <label for="mail"></label>
-              <input type="email" id="mail" name="user_mail" placeholder="E-mail" />
-            </li>
-            <li>
-              <label for="msg"></label>
-              <textarea id="msg" name="user_message" placeholder="Enter your message"></textarea>
-            </li>
-            <li class="button">
-              <button type="submit">Send</button>
-            </li>
-          </ul>
-        </form>
+              <li>
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Last name"
+                />
+              </li>
+              <li>
+                <label for="mail"></label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_mail"
+                  placeholder="E-mail"
+                />
+              </li>
+              <li>
+                <label for="msg"></label>
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  placeholder="Enter your message"
+                ></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send</button>
+              </li>
+            </ul>
+          </form>
+        </section>
       </main>
-      
+
       <footer>
         <div>
           <p>
@@ -87,23 +119,26 @@
           </a>
         </div>
       </footer>
-     </div>
-     <script>
+    </div>
+    <script>
       // get the feedback div element so we can do something with it.
-      const feedbackElement = document.getElementById('feedback');
+      const feedbackElement = document.getElementById("feedback");
       // get the form so we can read what was entered in it.
       const formElement = document.forms[0];
       // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-      formElement.addEventListener('submit', function(e) {
-          // stop the form from doing the default action.
-          e.preventDefault();
-          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-          feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-          // make the feedback element visible.
-          feedbackElement.style.display = "block";
-          // add a class to move everything down so our message doesn't cover it.
-          document.body.classList.toggle('moveDown');
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
       });
-  </script>
- </body>
+    </script>
+  </body>
 </html>
