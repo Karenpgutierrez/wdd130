@@ -492,6 +492,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
 }
 
 form li + li {
@@ -527,11 +528,13 @@ textarea {
   height: 5em;
 }
 
-.button {
+.button_msg {
   /* To position the buttons to the same position of the text fields */
   padding-left: 90px;
   text-align: right;
   margin-right: 70px;
+  margin-bottom: 20px;
+  
 }
 
 button {
