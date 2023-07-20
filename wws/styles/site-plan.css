@@ -55,12 +55,8 @@ img {
   margin-top: 25px;
 }
 
-#colombia-img{
-  background-position: center;
-  width: 500px;
-  height: 350px;
-}
 
+  
 
 .widescreen {
   position: relative;
@@ -137,6 +133,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
+  margin-top: 70px;
 }
 
 footer p,
@@ -367,13 +364,19 @@ p {
 }
 
 .card-img{
-  background-position: left;
+  margin: 0;
 
 }
 
 .msg {
   margin-top: 25px;
+  text-align: left; 
+  
+
 }
+
+
+
 
 a.button {
   background-color: var(--primary-color);
@@ -389,7 +392,6 @@ a.button:hover {
   
 
 }
-
 
 .cities-btn {
   width: 100%;
@@ -468,6 +470,8 @@ form {
   /* To see the outline of the form */
   padding: 1em;
   border: 1px solid #ccc;
+  margin-bottom: 100px;
+  
   
 }
 
