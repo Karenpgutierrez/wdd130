@@ -370,12 +370,7 @@ p {
 
 .msg {
   margin-top: 25px;
-  text-align: left; 
-  
-
 }
-
-
 
 
 a.button {
@@ -383,10 +378,11 @@ a.button {
   color: var(--accent2-color);
   padding: 10px;
   border-radius: 10px;
-  text-decoration: none;
-  
+  text-decoration: none; 
+  margin: center;
   
 }
+
 a.button:hover {
   background-color: var(--accent1-color);
   
