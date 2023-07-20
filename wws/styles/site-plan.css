@@ -55,7 +55,11 @@ img {
   margin-top: 25px;
 }
 
-
+#colombia-img{
+  background-position: center;
+  width: 500px;
+  height: 350px;
+}
 
 
 .widescreen {
@@ -362,6 +366,11 @@ p {
   left: 45%;
 }
 
+.card-img{
+  background-position: left;
+
+}
+
 .msg {
   margin-top: 25px;
 }
@@ -459,7 +468,7 @@ form {
   /* To see the outline of the form */
   padding: 1em;
   border: 1px solid #ccc;
-  border-radius: 1em;
+  
 }
 
 ul {
@@ -487,6 +496,7 @@ textarea {
   width: 300px;
   box-sizing: border-box; /* To harmonize the look & feel of text field border */
   border: 1px solid #999;
+  
 }
 
 input:focus,
